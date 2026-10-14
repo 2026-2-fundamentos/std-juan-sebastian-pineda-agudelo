@@ -1,8 +1,8 @@
 def pregunta_01():
 
-    return(hola mundo cruel)
+    return"Hola mundo cruel!"
 
 
 def pregunta_02():
 
-    return(hello cruel world)
+    return"Hello cruel world!"
