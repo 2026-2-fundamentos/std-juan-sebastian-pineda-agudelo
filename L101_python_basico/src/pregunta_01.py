@@ -1,3 +1,6 @@
+import gzip
+
+
 def pregunta_01():
     """
     Calcule la suma de los valores de la segunda columna (`value`) del
@@ -5,7 +8,8 @@ def pregunta_01():
 
     Ejemplo del formato de la respuesta:
 
+
         214
     """
-
-    raise NotImplementedError
+    with gzip.open("data/data.csv.gz", "rt") as f:
+        return sum(int(linea.split("\t")[1]) for linea in f if linea.strip())
